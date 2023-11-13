@@ -13,13 +13,11 @@
             string[] familj = new string[100];
             string[] sv = new string[100];
             int sista = 0;
-            art[sista] = "Hepatica nobilis";
-            familj[sista] = "Ranunculaceae";
-            sv[sista] = "Blåsippa";
-            sista++;
-            art[sista] = "Anemone nemorosa";
-            familj[sista] = "Ranunculaceae";
-            sv[sista] = "Vitsippa";
+            artlista[0] = new Art() { art = "Hepatica nobilis", familj = "Ranunculaceae", svenska = "Blåsippa" };
+            //sista++;
+            artlista[sista].art = "Anemone nemorosa";
+            artlista[sista].familj = "Ranunculaceae";
+            artlista[sista].svenska = "Vitsippa";
             sista++;
             art[sista] = "Taraxacum ruderalia";
             familj[sista] = "Asteraceae";
