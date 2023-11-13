@@ -3,6 +3,13 @@
     class Art
     {
         public string art, familj, svenska;
+
+        public Art(string art, string familj, string svenska)
+        {
+            this.art = art;
+            this.familj = familj;
+            this.svenska = svenska;
+        }
     }
     internal class Program
     {
@@ -13,7 +20,7 @@
             string[] familj = new string[100];
             string[] sv = new string[100];
             int sista = 0;
-            artlista[0] = new Art() { art = "Hepatica nobilis", familj = "Ranunculaceae", svenska = "Blåsippa" };
+            artlista[0] = new Art("Hepatica nobilis", "Ranunculaceae", "Blåsippa");
             //sista++;
             artlista[sista].art = "Anemone nemorosa";
             artlista[sista].familj = "Ranunculaceae";
@@ -38,6 +45,7 @@
                 // FIXME:
                 // List istället för array!!
                 // Klass istället för sträng-arrayer
+                // 
                 // En Input istället för Console.Write/Console.ReadLine
                 // Kan bryta ut metoder, t. ex. för "ny"
                 Console.Write("kommando: ");
