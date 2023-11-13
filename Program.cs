@@ -1,5 +1,9 @@
 ﻿namespace mju23h_dtp_genrep_FAS2
 {
+    class Art
+    {
+        public string art, familj, svenska;
+    }
     internal class Program
     {
         static void Main(string[] args)
@@ -47,6 +51,7 @@
                 {
                     Console.WriteLine("hjälp     - lista kommandona");
                     Console.WriteLine("lista     - lista alla arter");
+                    // FIXME: sluta
                 }
                 else if (kommando == "lista")
                 {
